@@ -14,6 +14,8 @@
 		B8B5BEAC1ACD5F3400135C4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B5BEAB1ACD5F3400135C4B /* Images.xcassets */; };
 		B8B5BEAF1ACD5F3400135C4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B5BEAD1ACD5F3400135C4B /* LaunchScreen.xib */; };
 		B8B5BEBB1ACD5F3500135C4B /* RestaurantLocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5BEBA1ACD5F3500135C4B /* RestaurantLocTests.swift */; };
+		B8B5BEC81ACD62F300135C4B /* AddLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5BEC71ACD62F300135C4B /* AddLocationController.swift */; };
+		B8B5BECA1ACD63F900135C4B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B5BEC91ACD63F900135C4B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		B8B5BEB41ACD5F3500135C4B /* RestaurantLocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantLocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B5BEB91ACD5F3500135C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B5BEBA1ACD5F3500135C4B /* RestaurantLocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLocTests.swift; sourceTree = "<group>"; };
+		B8B5BEC71ACD62F300135C4B /* AddLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationController.swift; sourceTree = "<group>"; };
+		B8B5BEC91ACD63F900135C4B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B5BECA1ACD63F900135C4B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 		B8B5BE931ACD5F3400135C4B = {
 			isa = PBXGroup;
 			children = (
+				B8B5BEC91ACD63F900135C4B /* MapKit.framework */,
 				B8B5BE9E1ACD5F3400135C4B /* RestaurantLoc */,
 				B8B5BEB71ACD5F3500135C4B /* RestaurantLocTests */,
 				B8B5BE9D1ACD5F3400135C4B /* Products */,
@@ -79,11 +85,10 @@
 		B8B5BE9E1ACD5F3400135C4B /* RestaurantLoc */ = {
 			isa = PBXGroup;
 			children = (
-				B8B5BEA11ACD5F3400135C4B /* AppDelegate.swift */,
-				B8B5BEA61ACD5F3400135C4B /* ViewController.swift */,
-				B8B5BEA81ACD5F3400135C4B /* Main.storyboard */,
+				B8B5BEC61ACD5FA100135C4B /* Controller */,
+				B8B5BEC51ACD5F9B00135C4B /* Model */,
+				B8B5BEC41ACD5F9500135C4B /* View */,
 				B8B5BEAB1ACD5F3400135C4B /* Images.xcassets */,
-				B8B5BEAD1ACD5F3400135C4B /* LaunchScreen.xib */,
 				B8B5BEA31ACD5F3400135C4B /* RestaurantLoc.xcdatamodeld */,
 				B8B5BE9F1ACD5F3400135C4B /* Supporting Files */,
 			);
@@ -113,6 +118,32 @@
 				B8B5BEB91ACD5F3500135C4B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8B5BEC41ACD5F9500135C4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8B5BEAD1ACD5F3400135C4B /* LaunchScreen.xib */,
+				B8B5BEA81ACD5F3400135C4B /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B8B5BEC51ACD5F9B00135C4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8B5BEA11ACD5F3400135C4B /* AppDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B8B5BEC61ACD5FA100135C4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8B5BEA61ACD5F3400135C4B /* ViewController.swift */,
+				B8B5BEC71ACD62F300135C4B /* AddLocationController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B5BEC81ACD62F300135C4B /* AddLocationController.swift in Sources */,
 				B8B5BEA71ACD5F3400135C4B /* ViewController.swift in Sources */,
 				B8B5BEA21ACD5F3400135C4B /* AppDelegate.swift in Sources */,
 				B8B5BEA51ACD5F3400135C4B /* RestaurantLoc.xcdatamodeld in Sources */,
